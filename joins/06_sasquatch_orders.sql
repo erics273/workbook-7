@@ -3,7 +3,8 @@ SELECT
     O.OrderDate,
     O.ShipName,
 	O.ShipAddress,
-    O.ShipCountry
+    O.ShipCountry,
+    P.ProductName
 FROM
 	Orders O
     join `Order Details` OD ON (OD.OrderID = O.OrderID)
